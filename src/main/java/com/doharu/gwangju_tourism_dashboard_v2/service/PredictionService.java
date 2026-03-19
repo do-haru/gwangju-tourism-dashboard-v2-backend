@@ -9,6 +9,7 @@ import java.util.Map;
 public class PredictionService {
 
     public Map<String, Object> predict(Map<String, Object> request) {
+        System.out.println(request);
         return Map.of(
                 "predictions", List.of(155, 160, 158, 162, 165),
                 "message", "AI 분석 결과 증가 추세"
